@@ -1,4 +1,4 @@
-import { ordered as cakeOrdered} from "../cake/cakeSlice";
+// import { ordered as cakeOrdered} from "../cake/cakeSlice";
 import { createSlice } from "@reduxjs/toolkit";
 
 
@@ -22,11 +22,11 @@ const iceCreamSlice = createSlice({
   //     state.numberOfIceCream--;
   //   }
   // }
-  extraReducers: (builder) => {
-    builder.addCase(cakeOrdered, (state) => {
-      state.numberOfIceCream--;
-    });
-  }
+  // extraReducers: (builder) => {
+  //   builder.addCase(cakeOrdered, (state) => {
+  //     state.numberOfIceCream--;
+  //   });
+  // }
 });
 
 export default iceCreamSlice.reducer;
